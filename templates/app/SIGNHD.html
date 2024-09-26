@@ -1,0 +1,80 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Register{% endblock title %}
+{% block main-content %}
+        <section>
+            <!---Log in page-->
+            <div class="wrapper"> <!------wrapper----->
+                <a href="Index.html" ><span class="icon-close"><ion-icon name="close"></ion-icon></a>
+                </span>
+                <div class="form-box login"> <!---form-box login--->
+                    <h2>LOGIN</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name = "lock-closed-outline"></ion-icon>
+                            </span>
+                            <input type ="password" required minlength="8" pattern="^(?=.*[!@#$%^&*])\S+$" title="Password must be at least 8 characters long and contain at least one special character (!@#$%^&*)">
+                            <label for="">Password</label> 
+                        </div>
+                        
+                        <div class="remember-forget">
+                            <label for=""><input type="checkbox">Remember Me <a href="#">Forgot Password?</a></label> 
+                        </div>
+                        <a href="{% url 'home' %}"><button type="submit" class="btn">Log in</button></a>
+                        <div class="login-register1"> <!-----login-register------>
+                            <p>Don't have a account? <a href="#" class="register-link"> Register</a></p>
+                        </div>
+                    </form>
+                </div>
+
+            <!---sign up page--->
+
+                <div class="form-box register"> 
+                    <h2>SIGN UP</h2>
+                    <form action="" class="pd">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <input type="email" required>
+                            <label for="">Fullname</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name = "lock-closed-outline"></ion-icon>
+                            </span>
+                            <input type ="password" required minlength="8" pattern="^(?=.*[!@#$%^&*])\S+$" title="Password must be at least 8 characters long and contain at least one special character (!@#$%^&*)">
+                            <label for="">Password</label> 
+                        </div>
+                        <div class="remember-forget"> 
+                            <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+                        </div>
+                        <a href="{% url 'home' %}"><button type="submit" class=" mybtn">Sign up</button></a>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link"> Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+
+            <script src="js/script.js"> </script> 
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script module src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </section>
+
+{% endblock main-content %}

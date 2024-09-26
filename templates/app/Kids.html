@@ -1,0 +1,50 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Kids Decor{% endblock title %}
+{% block main-content %}
+<!-----------------------------Body------------------------------------>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pdd">
+            <img src="{% static 'app/images/kids_decor.jpg' %}" class="kid-banner">
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pdd">
+            <p class="title">Kids Decor</p>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            {% for product in kid %}
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <a href="{% url 'Kids-detail' product.id %}" style="text-decoration: none;">
+                    <div class="seating">
+                    <div class="slide1">
+                    <img src="{{product.product_image.url}}">
+                    <h4 class="overlay">
+                        <form action="/add-to-cart">
+                            <input type="hidden" name="prod_id" value={{product.id}} id="prod_id">
+                            <button class="btn-cart1 form-control"><b>ADD TO CART</b></button>
+                        </form>
+                      </h4>
+                    </div>
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">{{product.title}}</h3>
+                        <p class="amber"> Random </p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-o star" aria-hidden="true"></i></span>
+                        <span>(2 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>{{product.discounted_price}}</b> </span>
+                        <span class="strike"><strike>{{product.selling_price}}</strike></b> </span>
+                        <p><b><span class="save">You Save ₹406 </span></span><span class="off"> (35% off)</span></b></p>
+                        <p class="earn">Earn 16 Extra Inside Styles Credits  (Worth <b>₹16</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                
+                </div>
+            </a>
+            </div>
+{% endfor %}
+        </div>
+
+       
+{% endblock main-content %}

@@ -1,0 +1,420 @@
+<html>
+    <head>
+        <title>
+            Inside Styles
+        </title>
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/furnishing.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function onClick() {
+            document.getElementById('sear').style.width="80%";
+            }       
+        </script>
+        <script>
+            function onClick() {
+            document.getElementById('wishlist').style.color="red";
+            }       
+        </script>
+    </head>
+    <body>
+        <!-----------------------------Offer----------------------------------------->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg">
+            <center class="offer">Get 15% Off your first order with code: Welcome15</center>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pd">
+                <img src="img/icon.png" class="logo">
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                <input class="search-button" id='sear' onclick="onClick()" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-signup">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pd">
+                    <p class="signup">Sign Up Now</p>
+                    <p class="signup1">Get Extra 10% Off</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+                        <i class="fa fa-user-o userr"></i> 
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-fav">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p class="fav1">Wishlist</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                        <i class="fa fa-heart fav"></i>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-cart">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+                        <p class="cart1">Cart</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+
+                        <i class="fa fa-shopping-basket cart"></i>
+                    </div>
+                </div>
+                
+                
+            </div>
+        
+        </div>
+        <!-----------------------------Menu bar-------------------------------------->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd header" id="myHeader">   
+            <div class="navbar navbar-inverse">
+                
+                <div class="navbar-header">
+                    <a href="" class="navbar-brand"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ss">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="ss">           
+                    <ul class="nav navbar-nav">
+                        <li class="ball">!<a href=""></a></li>
+                        <li><a href="" class="underline">All New</a></li>
+                        <li><a href="" class="underline">Sofas & Seating</a></li>
+                        <li><a href="" class="underline">Lamps & Lightings</a></li>
+                        <li><a href="" class="underline">Kitchen & Dining</a></li>
+                        <li><a href="" class="underline">Kids Decor</a></li>
+                        <li><a href="" class="underline">Indoor Plants</a></li>
+                        <li><a href="" class="underline">Furnishings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+
+<!-----------------------------Body------------------------------------>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pdd">
+            <img src="img/furnishing.avif">
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pdd">
+            <p class="title">Furnishings</p>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur1.webp">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Multicolor Geometric 280 TC Glace Cotton Queen Sized Bedsheet with 2 Pillow Covers by Hosta Homes</h3>
+                        <p class="amber"> Hosta Homes </p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-o star" aria-hidden="true"></i></span>
+                        <span>(192 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹863</b> </span>
+                        <span class="strike"><strike>₹1,599</strike></b> </span>
+                        <p><b><span class="save">You Save ₹736</span><span class="off"> (46% off)</span></b></p>
+                        <p class="earn">Earn 18 Extra Inside Styles Credits  (Worth <b>₹18</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur2.webp">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Cream Floral 160 TC Microfibre Queen Sized Bedsheet with 2 Pillow Covers by Alliance</h3>
+                        <p class="amber"> Alliance </p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span>
+                        <span>(373 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹539</b> </span>
+                        <span class="strike"><strike>₹897</strike></b> </span>
+                        <p><b><span class="save">You Save ₹358</span><span class="off"> (40% off)</span></b></p>
+                        <p class="earn">Earn 11 Extra Inside Styles Credits  (Worth <b>₹11</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur3.jpg">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Cream Floral 160 TC Microfibre Queen Sized Bedsheet with 2 Pillow Covers by Alliance</h3>
+                        <p class="amber"> Jaipur Fabric</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span>
+                        <span>(26 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹1,489</b> </span>
+                        <span class="strike"><strike>₹2,482</strike></b> </span>
+                        <p><b><span class="save">You Save ₹993</span><span class="off"> (40% off)</span></b></p>
+                        <p class="earn">Earn 30 Extra Inside Styles Credits  (Worth <b>₹30</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur4.jpg">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Purple Cotton 250 AC Room Single Bed Comforter by Jaipur Fabric</h3>
+                        <p class="amber">Jaipur Fabric </p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-o star" aria-hidden="true"></i></span>
+                        <span>(10 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹1,019</b> </span>
+                        <span class="strike"><strike>₹1,703</strike></b> </span>
+                        <p><b><span class="save">You Save ₹684</span><span class="off"> (40% off)</span></b></p>
+                        <p class="earn">Earn 21 Extra Inside Styles Credits  (Worth <b>₹21</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur5.webp">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Brown Geometric Jute 3 ft x 3 ft Hand Tufted Round Carpet by The Home Talk</h3>
+                        <p class="amber"> The Home Talk</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-half-o star" aria-hidden="true"></i></span>
+                        <span>(220 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹599</b> </span>
+                        <span class="strike"><strike>₹997</strike></b> </span>
+                        <p><b><span class="save">You Save ₹398</span><span class="off"> (40% off)</span></b></p>
+                        <p class="earn">Earn 12 Extra Inside Styles Credits  (Worth <b>₹12</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur6.avif">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Gold Shaggy Polyester 4 ft x 6 ft Machine Made Carpet by Saral Home</h3>
+                        <p class="amber">Saral Home</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-o star" aria-hidden="true"></i></span>
+                        <span>(93 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹3,324</b> </span>
+                        <span class="strike"><strike>₹4,999</strike></b> </span>
+                        <p><b><span class="save">You Save ₹1,675</span><span class="off"> (34% off)</span></b></p>
+                        <p class="earn">Earn 67 Extra Inside Styles Credits  (Worth <b>₹67</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur7.avif">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Ivory Silk Abstract 16x16 inches (Set of 5) Cushion Covers by Hosta Homes</h3>
+                        <p class="amber"> Hosta Homes </p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span>
+                        <span>(33 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹1,189</b> </span>
+                        <span class="strike"><strike>₹2,499</strike></b> </span>
+                        <p><b><span class="save">You Save ₹1,310</span><span class="off"> (52% off)</span></b></p>
+                        <p class="earn">Earn 24 Extra Inside Styles Credits  (Worth <b>₹24</b>)</p>
+                        <p class="save">Express Shipping in <b>1 day</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur8.avif">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart-o heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Beige Cotton Printed 59x51 Inches Throw with 1 Cushion Cover by BLANC9 </h3>
+                        <p class="amber"> BLANC9 </p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-half-o star" aria-hidden="true"></i></span>
+                        <span>(12 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹2,792</b> </span>
+                        <span class="strike"><strike>₹3,490</strike></b> </span>
+                        <p><b><span class="save">You Save ₹698</span><span class="off"> (20% off)</span></b></p>
+                        <p class="earn">Earn 56 Extra Inside Styles Credits  (Worth <b>₹56</b>)</p>
+                        <p class="save">Express Shipping in <b>1 day</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur9.avif">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">White Cotton Geometric & Abstract 5.5Ft Sheer Eyelet 1 Window Curtain by The Yellow Dwelling </h3>
+                        <p class="amber">The Yellow Dwelling</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-half-o star" aria-hidden="true"></i></span><span><i class="fa fa-star-half-o star" aria-hidden="true"></i></span>
+                        <span>(3 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹974</b> </span>
+                        <span class="strike"><strike>₹1,025</strike></b> </span>
+                        <p><b><span class="save">You Save ₹51</span><span class="off"> (5% off)</span></b></p>
+                        <p class="earn">Earn 20 Extra Inside Styles  Credits  (Worth <b>₹20</b>)</p>
+                        <p class="save">Express Shipping in <b>1 day</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur10.jpg">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Brown Floral Polyester 7 Ft Semisheer Eyelet Door Curtains (Set of 2) by Home Sizzler</h3>
+                        <p class="amber">Home Sizzler</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-half-o star" aria-hidden="true"></i></span>
+                        <span>(362 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹479</b> </span>
+                        <span class="strike"><strike>₹808</strike></b> </span>
+                        <p><b><span class="save">You Save ₹329</span><span class="off"> (41% off)</span></b></p>
+                        <p class="earn">Earn 10 Extra Inside Styles Credits  (Worth <b>₹10</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur11.jpg">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart-o heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Assorted Solid Cotton 380 GSM Hand Towels- Set of 2 (Any 2 Random Colors) By Sassoon Fab</h3>
+                        <p class="amber">Sassoon Fab</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-o star" aria-hidden="true"></i></span>
+                        <span>(710 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>₹199</b> </span>
+                        <span class="strike"><strike>₹309</strike></b> </span>
+                        <p><b><span class="save">You Save ₹110</span><span class="off"> (36% off)</span></b></p>
+                        <p class="earn">Earn 4 Extra Inside Styles Credits  (Worth <b>₹4</b>)</p>
+                        <p class="save">Express Shipping in <b>2 days</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="seating">
+                    <img src="img/fur12.avif">
+                    <div class="wish" id='wishlist' onclick="onClick()"><i class="fa fa-heart heart"></i></div>
+                    <div class="pdd1">
+                        <h3 class="product">Pink Patterned 210 GSM Cotton Bath Towel by Athom Living</h3>
+                        <p class="amber">Tu Casa</p>
+                        <span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star star" aria-hidden="true"></i></span><span><i class="fa fa-star-o star" aria-hidden="true"></i></span>
+                        <span>(263 sold)</span>
+                        <p class="Today">Today's Deal</p>
+                        <span class="rupee"><b>229</b> </span>
+                        <span class="strike"><strike>₹299</strike></b> </span>
+                        <p><b><span class="save">You Save ₹70</span><span class="off"> (23% off)</span></b></p>
+                        <p class="earn">Earn 5 Extra Inside Styles Credits  (Worth <b>₹5</b>)</p>
+                        <p class="save">Express Shipping in <b>1 day</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!----------------------------Footer------------------------------------------>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd7">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src="img/icon.png" class="logo">   
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <ul class="info">
+                <li class="head"><b>Information</b></li>
+                <li>570 8th Ave, New York, NY 10018 United States </li>
+                <li><b>(012) 345-6789</b></li>
+                <li>[email protected]</li>
+                <li><i class="fa fa-facebook-square ico"></i><i class="fa fa-twitter ico"></i><i class="fa fa-google-plus ico"></i></li>
+            </ul>
+        </div>    
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <ul class="info">
+                <li class="head"><b>About Us</b></li>
+                <li>About Inside Styles</li>
+                <li>Careers</li>
+                <li>News & Blog</li>
+                <li>Support Policy</li>
+                <li>Shop By Location</li>
+            </ul> 
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <ul class="info">
+                <li class="head"><b>Services</b></li>
+                <li>Gift Card</li>
+                <li>Mobile App</li>
+                <li>Shipping & Delivery</li>
+                <li>Order Pickup</li>
+                <li>Account Signup</li>
+            </ul>
+        </div>         
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+        <img src="img/1.webp" class="gallery"> 
+        <img src="img/2.webp" class="gallery">        
+        <img src="img/3.webp" class="gallery"> <br> 
+        <img src="img/4.webp" class="gallery">  
+        <img src="img/5.webp" class="gallery">  
+        <img src="img/6.webp" class="gallery"> <br> 
+        <img src="img/7.webp" class="gallery">  
+        <img src="img/8.webp" class="gallery">  
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd">
+    <p class="footer">Copyright © 2023 Artfusy. All rights reserved</p>
+</div>
+
+<!---------------------------------------Go to Top--------------------------------------------->
+
+<a id="mybutton"></a>
+
+<script>
+var btn = $('#mybutton');
+
+$(window).scroll(function() {
+if ($(window).scrollTop() > 300) {
+btn.addClass('show');
+} else {
+btn.removeClass('show');
+}
+});
+
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+    </body>
+</html>
