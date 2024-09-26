@@ -1,0 +1,221 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+
+{% block banner_slider %}
+<!--Banner Slider-->
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd content">
+  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pd">
+      <div class="carousel slide" data-ride="carousel" id="k">
+  
+              <ol class="carousel-indicators">
+              <li  data-target="#k" class="active" data-slide-to="0"></li>
+              <li data-target="#k" data-slide-to="1"></li>
+              <li data-target="#k" data-slide-to="2"></li>
+              
+              </ol>
+
+          <div class="carousel-inner" role="listbox">
+          <div class="item active"><img src="{% static 'app/images/banner01.webp' %}" class="sli1"></div>
+          <div class="item"><img src="{% static 'app/images/banner02.webp' %}" class="sli1"></div>
+          <div class="item"><img src="{% static 'app/images/banner03.webp' %}" class="sli1"></div>
+
+          </div>
+        <a href="#k" class="left carousel-control" data-slide="prev" role="button"></a>
+          
+          <a href="#k" class="right carousel-control" data-slide="next" role="button"></a>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+      <div class="side-img pd"><img src="{% static 'app/images/side1.webp' %}" class="img-height"></div>
+      <div class="side-img pd"><img src="{% static 'app/images/side2.webp' %}" class="img-height"></div>
+  </div>
+</div>
+<!-- End Banner Slider -->
+{% endblock banner_slider %}
+
+
+{% block livesale %}
+<!-- Live Sale Section -->
+<!-------------------------------Ribbon------------------------------------------------------>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd">
+  <img src="{% static 'app/images/ribbon.webp' %}">
+  </div>
+<!-- End Live Sale Section -->
+{% endblock livesale %}
+
+{% block main-content %}
+<!----------------------------------Home Decor------------------------------------->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd1">
+  <center>
+    <h1 class="Heading">Home Decor</h1>
+    <p class="Heading-para"><b style="color:#7e2284">Home Decor</b> is the most important segment in setting the complete ambiance of your home. </p>
+  </center>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd2">
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon1.jpg' %}" class="zoom">
+    <p class="tags">Wall Shelves</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon2.jpg' %}" class="zoom">
+    <p class="tags">Home Temple</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon3.jpg' %}" class="zoom">
+    <p class="tags">Wall Mirrors</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon4.jpg' %}" class="zoom">
+    <p class="tags">Wall Clocks</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon5.jpg' %}" class="zoom">
+    <p class="tags">Tableware</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon6.jpg' %}" class="zoom">
+    <p class="tags">Glassware</p></a>
+  </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd3">
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon7.jpg' %}" class="zoom">
+    <p class="tags">Figurines</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon8.jpg' %}" class="zoom">
+    <p class="tags">Key Holders</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon9.jpg' %}" class="zoom">
+    <p class="tags">Pots and Planters</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon10.jpg' %}" class="zoom">
+    <p class="tags">Photo Frames</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon11.jpg' %}" class="zoom">
+    <p class="tags">Laundry Baskets</p></a>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pd">
+    <a href="" class="color-change"><img src="{% static 'app/images/icon12.jpg' %}" class="zoom">
+    <p class="tags">Serving Trays</p></a>
+  </div>
+  </div>
+  <!-------------------------------------div switch----------------------------------------------------->
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd3">
+  <h2 class="Heading">Popular Picks in Home Decor</h2>
+  <ul class="tabs-nav">
+    <li class=""> <a href="#wallarts">Wall Arts</a></li>
+    <li class=""><a href="#wallclocks">Wall Clocks</a></li>
+    <li class=""><a href="#homegarden">Pots &amp; Planters</a></li>
+    <li class=""><a href="#spiritual">Spiritual</a></li>
+  </ul>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd4">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig1.webp' %}">
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig2.webp' %}">
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig3.webp' %}">
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig4.webp' %}">
+  </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig5.webp' %}">
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig6.webp' %}">
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig7.webp' %}">
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <img src="{% static 'app/images/fig8.webp' %}">
+  </div>
+  </div>
+  
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 writer eee">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+  <img src="{% static 'app/images/writer.gif' %}">
+  </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
+  <img src="{% static 'app/images/furniture.jpg' %}" class="furniture">
+  <button class="btnn"><b>Buy Now</b></button>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 wall">
+    <p class="wall-txt">New for your walls</p>
+    <img src="{% static 'app/images/wall.webp' %}">
+    <p class="wall-txt">Mirrors</p>
+  </div>
+  <div  class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+  
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+    <div class="cake">
+     <img src="{% static 'app/images/plate.webp' %}">
+     <p class="shop">Shop Serveware</p>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+    <div class="cake">
+        <img src="{% static 'app/images/stand.webp' %}">
+        <p class="shop">Shop Cake Stands</p>
+       </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+    <div class="cake">
+        <img src="{% static 'app/images/Mug.webp' %}">
+        <p class="shop">Shop Teacups & Mugs</p>
+       </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+  <div class="cake">
+    <img src="{% static 'app/images/tray.webp' %}">
+    <p class="shop">Shop Serving Tray</p>
+   </div>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+    <img src="{% static 'app/images/dinnerware.webp' %}">
+    <p class="wall-txt1"><b>Shop Dinnerware</b></p>
+  </div>
+  </div>
+  <!------------------------------------Email------------------------------------------------------>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 image-text pd6 iii">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  
+  
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  
+  
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="email-box">
+        <p class="para1"><b>WE WRITE REALLY GREAT EMAILS.</b></p>
+        <p class="para2">No Spam. Only updates about new launches and sales. Directly to your inbox.</p>
+  
+        <form>
+            <input type="email" name="Email" class="form-control" placeholder="Your Email" required title="Valid Email Format:example1234@example.com" /><br />
+            <input type="submit" class="form-control subscribe" value="Subscribe">
+        </form>
+    </div>
+  </div>
+  </div>
+<!-- End 1st Product Slider -->
+
+{% endblock main-content %}
+

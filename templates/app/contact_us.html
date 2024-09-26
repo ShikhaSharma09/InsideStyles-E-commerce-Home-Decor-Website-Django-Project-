@@ -1,0 +1,54 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Buy Now{% endblock title %}
+{% block main-content %}
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <form class="" action="#" method="post" style="margin:40px 0 40px 0;border: 1px solid #000;padding:40px 40px 60px 40px;border-radius:15px">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="exampletext1">Full Name</label>
+                <input type="text" name = "name" class="form-control" id="exampleInputtext1 " aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+            <label for="exampleInputEmail">Email Address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputNumber">Mobile Number</label>
+                <input type="number" name="number" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputtext2">Feedback</label><br> 
+                <textarea name ="feedback" style="height:100px;width:100%;" class="form-control" placeholder="Write Your Message"></textarea>    
+            </div>
+            <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <center><button type="submit" class="btn btn-primary">Send</button></center>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:20px 0px;background: black; color:#fff;margin:20px 0 20px 0">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <h5><b>Contact Us: </b></h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <h5>inside.styles@gmail.com</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <h5>+91 9871638623</h5>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+    </div>
+</div>
+           
+
+{% endblock main-content %}

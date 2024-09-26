@@ -1,0 +1,271 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+          Inside Styles {% block title %} {% endblock title %} 
+             
+        </title>
+        <link rel="icon" type="image/png" href="{% static 'app/images/icon.png' %}">
+        <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/index.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/prod1.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/sofa.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/Lamps.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/Indoor_plants.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/Kids.css' %}">
+        <link rel="stylesheet" href="{% static 'app/css/Kitchen.css' %}">
+        <script src="{% static 'app/js/jquery.min.js' %}"></script>
+        <script src="{% static 'app/js/bootstrap.min.js' %}"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script>
+            function onClick() {
+            document.getElementById('sear').style.width="80%";
+            }       
+        </script>
+    </head>
+    <style>
+        .iii{ background: url("{% static 'app/images/email_img.webp' %}") 50% 0 no-repeat;
+                    background-size: cover;}
+        .eee{ background: url("{% static 'app/images/writer_bg.webp' %}") 50% 0 no-repeat;
+        background-size: cover;}
+        select option[value="Shikha"] { 
+            display: none; 
+        }
+        .btn-cart1 {
+    padding: 0px 0 0 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: 2px solid purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    </style>
+    <body>
+        <!-----------------------------Offer----------------------------------------->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg">
+            <center class="offer">Get 15% Off your first order with code: Welcome15</center>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pd">
+                <img src="{% static 'app/images/icon.png' %}" class="logo">
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                <input class="search-button" id='sear' onclick="onClick()" placeholder="Search">
+                <i class="fa fa-search"></i>                
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-signup">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pd">
+                        {% if request.user.is_authenticated %}
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                        {{request.user.username|capfirst}}
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="{% url 'profile' %}">Profile</li>
+                                    <li><a href="{% url 'contactus' %}">Contact Us</li>
+                                    <form action="{% url 'logout' %}" method="POST" style="display:inline;">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-link" style="padding:0; border:none; background:none;">Logout</button>
+                                    </form>
+                                    </ul>
+                                </div>
+                        {% endif %}
+                    </div>
+                    <!-- {% if user.is_authenticated %}
+                    
+                        <p class="signup">Hello {{fname}}</p>
+                        <p class="signup1"><a href="{% url 'logout' %}">Signout</a></p>
+                
+                    {% else %}
+                        <a href="{% url 'customerregistration' %}">
+                        <p class="signup">Sign Up Now</p>
+                        <p class="signup1">Get Extra 10% Off</p>
+                        </a>
+                    {% endif %}
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd">
+                        <i class="fa fa-user-o userr"></i> 
+                    </div></a> -->
+                </div>
+                {% if request.user.is_authenticated %}
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-fav">
+                        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <p class="fav1">Wishlist</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+                            <i class="fa fa-heart fav"></i>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-cart">
+                        
+                            <a href="{% url 'showcart' %}" > <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+                                <p class="cart1">Cart</p>
+                            </div>
+                        
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+
+                                <i class="fa fa-shopping-basket cart"></i>
+                            </div></a>
+                    </div>
+                {% else %}
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-fav">
+                        <a href="{% url 'login' %}">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+                                
+                                <h5 class="" style="color:#000;text-align: right;"><b>Login</b></h5>
+                                
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+                                <i class="fa fa-user userr"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pd-cart">
+                        <a href="{% url 'customerregistration' %}"> 
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pd">
+                                <h5 class="" style="color:#000;text-align: right;"><b>Signup</b></h5>
+                                </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <i class="fa fa-user-o userr"></i>
+                            </div>
+                        </a>  
+                    </div>
+                {% endif %}
+                
+            </div>
+        
+        </div>
+        <!-----------------------------Menu bar-------------------------------------->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd header" id="myHeader">   
+            <div class="navbar navbar-inverse">
+                
+                <div class="navbar-header">
+                    <a href="" class="navbar-brand"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ss">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="ss">           
+                    <ul class="nav navbar-nav">
+                        <li class="ball">!<a href=""></a></li>
+                        <li><a href="{% url 'home' %}" class="underline">All New</a></li>
+                        <li><a href="{% url 'Sofa' %}" class="underline">Sofas & Seating</a></li>
+                        <li><a href="{% url 'Lamps' %}" class="underline">Lamps & Lightings</a></li>
+                        <li><a href="{% url 'Kitchen' %}" class="underline">Kitchen & Dining</a></li>
+                        <li><a href="{% url 'Kids' %}" class="underline">Kids Decor</a></li>
+                        <li><a href="{% url 'IndoorPlants' %}" class="underline">Indoor Plants</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
+
+{% block banner_slider %} {% endblock banner_slider %}
+{% block livesale %} {% endblock livesale %}
+{% block main-content %} {% endblock main-content %}
+
+{% block Footer %} 
+<!-----------------------------------------Footer---------------------------------------------------->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd7">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <img src="{% static 'app/images/icon.png' %}" class="logo">   
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="info">
+                        <li class="head"><b>Information</b></li>
+                        <li>570 8th Ave, New York, NY 10018 United States </li>
+                        <li><b>(012) 345-6789</b></li>
+                        <li>[email protected]</li>
+                        <li><i class="fa fa-facebook-square ico"></i><i class="fa fa-twitter ico"></i><i class="fa fa-google-plus ico"></i></li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="info">
+                        <li class="head"><b>About Us</b></li>
+                        <li>About Inside Styles</li>
+                        <li>Careers</li>
+                        <li>News & Blog</li>
+                        <li>Support Policy</li>
+                        <li>Shop By Location</li>
+                    </ul> 
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="info">
+                        <li class="head"><b>Services</b></li>
+                        <li>Gift Card</li>
+                        <li>Mobile App</li>
+                        <li>Shipping & Delivery</li>
+                        <li>Order Pickup</li>
+                        <li>Account Signup</li>
+                    </ul>
+                </div>         
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+                <img src="{% static 'app/images/1.webp' %}" class="gallery"> 
+                <img src="{% static 'app/images/2.webp' %}" class="gallery">        
+                <img src="{% static 'app/images/3.webp' %}" class="gallery"> <br> 
+                <img src="{% static 'app/images/4.webp' %}" class="gallery">  
+                <img src="{% static 'app/images/5.webp' %}" class="gallery">  
+                <img src="{% static 'app/images/6.webp' %}" class="gallery"> <br> 
+                <img src="{% static 'app/images/7.webp' %}" class="gallery">  
+                <img src="{% static 'app/images/8.webp' %}" class="gallery">  
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd">
+            <p class="footer">Copyright © 2023 Artfusy. All rights reserved</p>
+        </div>
+{% endblock Footer %}
+<!---------------------------------------Go to Top--------------------------------------------->
+
+<a id="mybutton"></a>
+
+<script>
+var btn = $('#mybutton');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+<script src="{% static 'app/js/myscript.js' %}"></script>
+<script src="js/script.js"> </script> 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script module src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
